@@ -14,6 +14,11 @@ $app->view->parserOptions = array(
 
 // Twig cachebuster
 $bustCacheFilter = new Twig_SimpleFilter('bust_cache', function ($string) {
+	global $config;
+	if (!$config['cacheBreakAssets']) {
+		return $string;
+	}
+
 	if (!preg_match('/^(.*)(\.[^.]*)$/', $string, $matches))
 		return $string;
 

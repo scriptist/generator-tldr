@@ -26,7 +26,7 @@ gulp.task('scss', ['cleancss'], function() {
 			.pipe(autoprefixer())
 		.pipe($.sourcemaps.write(''))
 		.pipe(gulp.dest('css'))
-		.pipe(browserSync.stream({once: true}));
+		.pipe(browserSync.stream());
 });
 
 gulp.task('es6', ['lintes6', 'cleanjs'], function() {
