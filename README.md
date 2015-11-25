@@ -1,5 +1,4 @@
-# generator-slim-twig-scss-babel [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
-> 
+# generator-slim-twig-scss-babel
 
 ## Installation
 
