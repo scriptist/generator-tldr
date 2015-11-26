@@ -1,18 +1,18 @@
-# generator-slim-twig-scss-babel
+# generator-tldr
 
 ## Installation
 
-First, install [Yeoman](http://yeoman.io) and generator-slim-twig-scss-babel using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)).
+First, install [Yeoman](http://yeoman.io) and generator-tldr using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)).
 
 ```bash
 npm install -g yo
-npm install -g generator-slim-twig-scss-babel
+npm install -g generator-tldr
 ```
 
 Then generate your new project:
 
 ```bash
-yo generator-slim-twig-scss-babel
+yo generator-tldr
 ```
 
 ## Getting To Know Yeoman
@@ -22,11 +22,3 @@ Yeoman has a heart of gold. He&#39;s a person with feelings and opinions, but he
 ## License
 
 Apache-2.0 © [Michael Berman](http://scripti.st)
-
-
-[npm-image]: https://badge.fury.io/js/generator-slim-twig-scss-babel.svg
-[npm-url]: https://npmjs.org/package/generator-slim-twig-scss-babel
-[travis-image]: https://travis-ci.org/scriptist/generator-slim-twig-scss-babel.svg?branch=master
-[travis-url]: https://travis-ci.org/scriptist/generator-slim-twig-scss-babel
-[daviddm-image]: https://david-dm.org/scriptist/generator-slim-twig-scss-babel.svg?theme=shields.io
-[daviddm-url]: https://david-dm.org/scriptist/generator-slim-twig-scss-babel
