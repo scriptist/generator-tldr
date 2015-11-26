@@ -8,7 +8,8 @@ module.exports = yeoman.generators.Base.extend({
 	prompting: function () {
 		this.appname = path.basename(this.destinationRoot());
 		this.log(yosay(
-			'Welcome to the ' + chalk.red('generator-slim-twig-scss-babel') + ' generator!'
+			'Welcome to ' + chalk.red('generator-tldr') + '\n' +
+			'PHP, Slim, Twig, Gulp, SCSS, and Babel (ES6)'
 		));
 	},
 
