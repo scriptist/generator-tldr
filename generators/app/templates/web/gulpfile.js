@@ -3,6 +3,7 @@ var autoprefixer = require('gulp-autoprefixer');
 var $ = require('gulp-load-plugins')();
 var browserify = require('browserify');
 var babelify = require('babelify');
+var aliasify = require('aliasify');
 var browserSync = require('browser-sync');
 var source = require('vinyl-source-stream');
 var buffer = require('vinyl-buffer');
@@ -34,8 +35,9 @@ gulp.task('es6', ['lintes6', 'cleanjs'], function() {
 		baseDir: 'es6',
 		entries: ['es6/global.es6'],
 		paths: ['es6', 'bower_components'],
-		transform: [babelify]
+		transform: [aliasify]
 	});
+	b.transform('babelify', {extensions: ['.es6']});
 
 	return b.bundle()
 		.on('error', function (err) {
@@ -73,6 +75,7 @@ gulp.task('lintes6', function() {
 		.pipe($.eslint({
 			extends: 'eslint:recommended',
 			env: {
+				"amd": true,
 				"browser": true,
 			},
 			parser: 'babel-eslint',
