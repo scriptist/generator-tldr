@@ -1,8 +1,8 @@
 {
   "name": "generator-tldr",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "PHP, Slim, Twig, Gulp, SCSS, and Babel (ES6)",
-  "homepage": "https://github.com/scriptist/generator-slim-twig-scss-babel",
+  "homepage": "https://github.com/scriptist/generator-tldr",
   "author": {
     "name": "Michael Berman",
     "email": "me@scripti.st",
