@@ -74,7 +74,7 @@ gulp.task('buildjs', ['es6'], function() {
 
 gulp.task('lintes6', function() {
 	return gulp
-		.src('app/es6/**/*.es6')
+		.src('es6/**/*.es6')
 		.pipe($.eslint({
 			extends: 'eslint:recommended',
 			env: {
