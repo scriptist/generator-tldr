@@ -36,7 +36,7 @@ gulp.task('es6', ['lintes6', 'cleanjs'], function() {
 		baseDir: 'es6',
 		entries: ['es6/global.es6'],
 		paths: ['es6', 'bower_components'],
-		transform: [aliasify]
+		transform: []
 	});
 	b.transform('babelify', {extensions: ['.es6']});
 
